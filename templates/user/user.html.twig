@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <p>{{ allUser }}</p>
+    {% if edit is defined %}
+        <p>{{ editUser }}</p>
+    {% endif %}
+
+    {% if edit is defined %}
+        <p>{{ deleteUser }}</p>
+    {% endif %}
+{% endblock %}
